@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.klarasapps.theguideofrijeka.PeekPoke" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="58dp"
+                android:layout_marginBottom="10dp"
+                android:text="Croatian National Theatre Ivan pl. Zajc"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="319dp"
+                android:layout_height="232dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_marginBottom="12dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginStart="40dp"
+                android:adjustViewBounds="true"
+                android:padding="10dp"
+                android:src="@drawable/hnk"
+                app:layout_constraintBottom_toTopOf="@+id/textView6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="387dp"
+                android:layout_height="210dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="32dp"
+                android:text="Today’s Ivan pl. Zajc Croatian National Theatre is located by the main city market, close to the banks of the Rječina River and close to the port’s docks, on artificially created land of the former army training ground known as Ürmeny Square. The construction of the Ivan pl. Zajc Croatian National Theatre building was initiated by mayor Ciotta in the 1880s. The imposing project of the former community theatre “Teatro Verdi” was designed by the “Atelier Fellner and Helmer” from Vienna, a team specialised in the construction of theatre buildings from Prague to New York.   The scenic accomplishments of Croatian drama, Italian drama, opera and ballet can be seen at the theatre today."
+                android:textAlignment="center"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="148dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="5dp"
+                android:text="Working hours:"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="0dp"
+                android:text="Mon – Fri: 09:00h - 15:00h"
+                android:textAlignment="center" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="135dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="0dp"
+                android:text="Sat: 09:00h - 13:00h"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="32dp"
+                android:text="Contact: blagajna@hnk-zajc.hr or +385 51 337 114
+"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/button"
+                android:onClick="location"
+                android:layout_width="69dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="171dp"
+                android:layout_marginStart="171dp"
+                android:text="Visit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

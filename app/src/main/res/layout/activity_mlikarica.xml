@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.klarasapps.theguideofrijeka.PeekPoke" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="58dp"
+                android:layout_marginBottom="10dp"
+                android:text="Mlikarica - The Milk Lady"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="192dp"
+                android:layout_height="309dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="115dp"
+                android:layout_marginStart="115dp"
+                android:layout_marginTop="0dp"
+                android:adjustViewBounds="true"
+                android:padding="10dp"
+                android:src="@drawable/mliko"
+                app:layout_constraintBottom_toTopOf="@+id/textView6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="373dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                android:text=" A sculpture was erected on the Milk Square, made according to the character of a real person, the 'milk lady' Antonia Reljac from Podhum. Due to the early departure to Rijeka, at night, while the others are still asleep, he holds a petroleum lamp in his hand."
+                android:textAlignment="center"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <Button
+                android:id="@+id/button"
+                android:onClick="location"
+                android:layout_width="69dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="171dp"
+                android:layout_marginStart="171dp"
+                android:text="Visit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.klarasapps.theguideofrijeka.PeekPoke" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="58dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="58dp"
+                android:layout_marginBottom="0dp"
+                android:text="Museum of Modern and Contemporary Art"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="319dp"
+                android:layout_height="232dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginStart="48dp"
+                android:adjustViewBounds="true"
+                android:padding="10dp"
+                android:src="@drawable/modern"
+                app:layout_constraintBottom_toTopOf="@+id/textView6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="387dp"
+                android:layout_height="203dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="8dp"
+                android:text="The museum has its roots in the Fine Arts Gallery built in 1948. Six years later, in 1954, the 1954 Salon was founded - the Exhibition of Contemporary Sculpture and Painting in the Socialist Federal Republic of Yugoslavia (SFRY). This was the first group exhibition of the modern fine arts production of the former state. In 1960 it started the Biennale of Young Artists and in 1968 it presented the International Exhibition of Original Drawings. Since 1990 it has been presenting Croatian artists at the European and Mediterranean Biennale of Young Artists. In 1962 the institution changed its name to the Rijeka Modern Gallery and in 2003 to the Museum of Modern and Contemporary Art. "
+                android:textAlignment="center"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="148dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="5dp"
+                android:text="Working hours:"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="115dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="0dp"
+                android:text="Tue – Sun: 11:00h - 20:00h"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="32dp"
+                android:text="Contact: mmsu-rijeka@ri.t-com.hr or+385 51 492 611
+"
+                android:textAlignment="center" />
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="0dp"
+                android:text="Ticket price: 10,00 kunas"
+                android:textAlignment="center" />
+            <Button
+                android:id="@+id/button"
+                android:onClick="location"
+                android:layout_width="69dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="171dp"
+                android:layout_marginStart="171dp"
+                android:layout_marginTop="10dp"
+                android:text="Visit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

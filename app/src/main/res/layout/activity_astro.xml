@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.klarasapps.theguideofrijeka.PeekPoke" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="58dp"
+                android:layout_marginBottom="10dp"
+                android:text="Astrological Centre Rijeka"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="319dp"
+                android:layout_height="232dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_marginBottom="32dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginStart="41dp"
+                android:adjustViewBounds="true"
+                android:padding="10dp"
+                android:src="@drawable/astro"
+                app:layout_constraintBottom_toTopOf="@+id/textView6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="387dp"
+                android:layout_height="234dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:text="The Astronomical Centre Rijeka is the only facility of its kind in Croatia. It was opened in 2009 above the city, in the former fortress which dates back to the Second World War. In 2001 a telescope protected by a mobile dome was installed in one of the four fortress towers. Today it is the first astronomy centre in Croatia that includes both an observatory and a planetarium. It is also the only planetarium in Croatia and the wider region with digital technology. Its programme takes place within a spherical dome which can host up to 52 visitors. Here you can enjoy films and presentations dedicated to the immensity of the universe. The planetarium is part of the International Planetarium Society."
+                android:textAlignment="center"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <Button
+                android:id="@+id/button"
+                android:onClick="location"
+                android:layout_width="69dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="171dp"
+                android:layout_marginStart="171dp"
+                android:text="Visit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.klarasapps.theguideofrijeka.PeekPoke" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="58dp"
+                android:layout_marginBottom="10dp"
+                android:text="Trsat Castle"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="319dp"
+                android:layout_height="232dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginStart="41dp"
+                android:adjustViewBounds="true"
+                android:padding="10dp"
+                android:src="@drawable/castle"
+                app:layout_constraintBottom_toTopOf="@+id/textView6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="387dp"
+                android:layout_height="190dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                android:text="The Trsat Castle represents a strategically embossed lookout on a hill 138 meters above sea level dominating Rijeka. It was mentioned as a parochial centre for the first time in 1288. At this same site there was a Liburnian observation post from prehistoric times, used for monitoring the roads leading from the hinterland to the coast. This location served well to the Romans to establish their defence system, the so-called Liburnian limes, whose starting point was the Tarsatica fortress town – which was situated at the site of today's Old City of Rijeka."
+                android:textAlignment="center"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <Button
+                android:id="@+id/button"
+                android:onClick="location"
+                android:layout_width="69dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="171dp"
+                android:layout_marginStart="171dp"
+                android:text="Visit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

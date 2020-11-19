@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.klarasapps.theguideofrijeka.PeekPoke" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="58dp"
+                android:layout_marginBottom="10dp"
+                android:text="The Croatian War Veterans Bridge"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="374dp"
+                android:layout_height="192dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginStart="19dp"
+                android:adjustViewBounds="true"
+                android:padding="10dp"
+                android:src="@drawable/bridge"
+                app:layout_constraintBottom_toTopOf="@+id/textView6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="380dp"
+                android:layout_height="156dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                android:text=" The Croatian War Veterans Bridge is a pedestrian bridge in Rijeka. It is a unique urban solution combining the concepts of spatial intervention, an urban public object and a symbolic memorial object. It functions as a public space and as a roosting spot providing space for official ceremonies. It bridges the Dead Channel between two road bridges. It is included in the list of the most valuable bridges built in the last fifteen years owing to its exceptional design value."
+                android:textAlignment="center"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <Button
+                android:id="@+id/button"
+                android:onClick="location"
+                android:layout_width="69dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="171dp"
+                android:layout_marginStart="171dp"
+                android:text="Visit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

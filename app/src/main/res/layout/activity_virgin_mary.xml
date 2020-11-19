@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.klarasapps.theguideofrijeka.PeekPoke" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="58dp"
+                android:layout_marginBottom="10dp"
+                android:text="The Church of the Assumption of the Blessed Virgin Mary"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="192dp"
+                android:layout_height="200dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_marginBottom="13dp"
+                android:layout_marginEnd="115dp"
+                android:layout_marginStart="115dp"
+                android:adjustViewBounds="true"
+                android:padding="10dp"
+                android:src="@drawable/virgin"
+                app:layout_constraintBottom_toTopOf="@+id/textView6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="362dp"
+                android:layout_height="299dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="The Church of the Assumption of the Blessed Virgin Mary was never destined to become a cathedral, even though the walls are evidence that the church has been here for centuries. It is situated beside the main intersecting Roman streets from east to west called decumanum, along the eastern periphery of the City walls and in the vicinity of the first port on the river Rječina.  The bell tower with Gothic characteristics arrived after all of the historical additions were removed from it, as a rare and preserved city monument from the Middle Ages, and it has a unique feature: a 40 cm slope, which is why it was called &quot;The Leaning Tower&quot;. The cause of this distortion, which is the reason why there were several attempts to demolish the tower in the past, lies partially in the tower's Late Antique foundations and partially in the ground underneath it that is strongly affected by groundwater streams."
+                android:textAlignment="center"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.55"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <Button
+                android:id="@+id/button"
+                android:onClick="location"
+                android:layout_width="69dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="171dp"
+                android:layout_marginStart="171dp"
+                android:text="Visit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

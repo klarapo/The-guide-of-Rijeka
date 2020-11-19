@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.klarasapps.theguideofrijeka.PeekPoke" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="58dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="58dp"
+                android:layout_marginBottom="0dp"
+                android:text="Maritime and History Museum of the Croatian Littoral"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="319dp"
+                android:layout_height="232dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginStart="41dp"
+                android:adjustViewBounds="true"
+                android:padding="10dp"
+                android:src="@drawable/marin"
+                app:layout_constraintBottom_toTopOf="@+id/textView6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="387dp"
+                android:layout_height="192dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:text="The Maritime and History Museum of the Croatian Littoral, which was established in 1961 and comprises maritime, historical and cultural, ethnographic and archaeological departments. Some of the original items from the Governor's Palace, such as furniture and artisan craft-work, have been preserved and exhibited in salons on the first floor. The permanent exhibition of the museum provides an interactive and modern platform for showcasing the long, rich and tumultuous history and culture of living in the area of what is today Primorje-Gorski Kotar County from prehistoric times to the present day."
+                android:textAlignment="center"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="148dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="5dp"
+                android:text="Working hours:"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="135dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="0dp"
+                android:text="Mon: 09:00h -16:00h"
+                android:textAlignment="center" />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="0dp"
+                android:text="Tue – Sat: 09:00h - 20:00h"
+                android:textAlignment="center" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="135dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="0dp"
+                android:text="Sun: 09:00h - 13:00h"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="32dp"
+                android:text="Contact: +385 51 21 35 78"
+                android:textAlignment="center" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:onClick="location"
+                android:layout_width="69dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="171dp"
+                android:layout_marginStart="171dp"
+                android:text="Visit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

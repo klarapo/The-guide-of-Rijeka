@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.klarasapps.theguideofrijeka.PeekPoke" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="58dp"
+                android:layout_marginBottom="10dp"
+                android:text="The Rijeka Tunnel"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="319dp"
+                android:layout_height="232dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_marginBottom="32dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginStart="41dp"
+                android:adjustViewBounds="true"
+                android:padding="10dp"
+                android:src="@drawable/tunel"
+                app:layout_constraintBottom_toTopOf="@+id/textView6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="383dp"
+                android:layout_height="328dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginBottom="0dp"
+                android:text="The first military tunnel opened exclusively for tourist visits is waiting for you in the very centre of the city. The decision to build the tunnel arose from the fact that the city sprung up at the crossroads of several historical states, which is why it also became an area of particular military significance. The entrance to the tunnel is located next to the Cathedral of St. Vitus and it stretches below the Old Town to the Dolac Primary School. The 330-m long tunnel, which was dug into bedrock from 1939 to 1942 by the Italian military in order to protect civilians from aerial bombings, descends to a depth of 10 m in several places. It is 4 m wide and 2.5 m high on average. The main tunnel bore branches off in two directions, one leading towards the old city hall building and the other to the Cathedral of St. Vitus. In several places along the tunnel, you can still see the original “Riservato all U.N.P.A.” (“Reserved for the Anti-aircraft Corps“) signs."
+                android:textAlignment="center"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <Button
+                android:id="@+id/button"
+                android:onClick="location"
+                android:layout_width="69dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="171dp"
+                android:layout_marginStart="171dp"
+                android:text="Visit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

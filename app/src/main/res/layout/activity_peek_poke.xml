@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.klarasapps.theguideofrijeka.PeekPoke" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="98dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="58dp"
+                android:layout_marginBottom="0dp"
+                android:text="Peek &amp; Poke Museum"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="335dp"
+                android:layout_height="265dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="0dp"
+                app:srcCompat="@drawable/peek" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="0dp"
+                android:text="Opened in 2007, it welcomes its visitors with exhibits that date back to the 1960s. Some of the oldest exhibits include the pioneers of computer technology, such as Minivac (1961), the first big series personal computer (Apple II), the first affordable home computer (Sinclair ZX80), the first palmtop (Newton), the computer on which Andy Warhol made his art (Amiga 1000) and the great-grandfather of all modern personal computers - the original IBM PC. The museum holds a proof that Croatia was once a leader in one sector of this technology - the first European calculator, manufactured in 1971 in Buje in the Digitron factory, is exhibited here."
+
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="148dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="5dp"
+                android:text="Working hours:"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="115dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="0dp"
+                android:text="Mon – Fri: 10:00h - 18:00h"
+                android:textAlignment="center" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="5dp"
+                android:text="Sat: 11:00h - 16:00h"
+                android:textAlignment="center" />
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="58dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="32dp"
+                android:text="Contact: info@peekpoke.hr or 091 780 5709"
+                android:textAlignment="center" />
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="0dp"
+                android:text="Ticket price: 30,00 kunas"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/button1"
+                android:onClick="gothere"
+                android:layout_width="69dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="171dp"
+                android:layout_marginStart="171dp"
+                android:layout_marginTop="55dp"
+                android:text="Visit" />
+
+            <Button
+                android:id="@+id/button2"
+                android:onClick="location"
+                android:layout_width="69dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="56dp"
+                android:layout_marginEnd="71dp"
+                android:layout_marginStart="71dp"
+                android:layout_marginTop="0dp"
+                android:text="Path" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

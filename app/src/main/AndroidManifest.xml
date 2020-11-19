@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.klarasapps.theguideofrijeka">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Home" />
+        <activity android:name=".Museums" />
+        <activity android:name=".Churches" />
+        <activity android:name=".HistoricalBuildings" />
+        <activity android:name=".Theatres" />
+        <activity android:name=".Info" />
+        <activity android:name=".Bridge" />
+        <activity android:name=".Zajc" />
+        <activity android:name=".Mlikarica" />
+        <activity android:name=".JankoPKamov" />
+        <activity android:name=".Walker" />
+        <activity android:name=".Liberation" />
+        <activity android:name=".Market" />
+        <activity android:name=".Tower" />
+        <activity android:name=".Roman" />
+        <activity android:name=".Jerome" />
+        <activity android:name=".George" />
+        <activity android:name=".LadyTrsat" />
+        <activity android:name=".VirginMary" />
+        <activity android:name=".Vitus" />
+        <activity android:name=".Capucin" />
+        <activity android:name=".Statues" />
+        <activity android:name=".MoloLongo" />
+        <activity android:name=".OldTown" />
+        <activity android:name=".Tunel" />
+        <activity android:name=".Stairwell" />
+        <activity android:name=".Astro" />
+        <activity android:name=".Castle" />
+        <activity android:name=".Justice" />
+        <activity android:name=".RiTheatre" />
+        <activity android:name=".Puppet" />
+        <activity android:name=".HNKZajc" />
+        <activity android:name=".MarinHistory" />
+        <activity android:name=".CityMuseum" />
+        <activity android:name=".ModernMuseum" />
+        <activity android:name=".PeekPoke"></activity>
+    </application>
+
+</manifest>
