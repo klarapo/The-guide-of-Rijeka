@@ -3,7 +3,7 @@
 Final paper - Project scripts
 Author: Klara Popovic
 
-The Guide of Rijeka is a turist mobile app for android phones made in 2019 for my final paper.
+The Guide of Rijeka is a turist mobile app for android phones made in 2019 for my final paper in university.
 
 SPECIFICATIONS:
 
